@@ -69,6 +69,22 @@
     grid-template-columns: .2fr 2fr;
 }
 
+.account-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    padding-right: 5%;
+}
+
+.account-actions button {
+    color: white;
+    background-color: #22d3ee;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
 /*Left Sidebar*/
 .left-sidebar {
     grid-row: 1/ span 3;
@@ -120,9 +136,17 @@
     align-items: flex-start;
 }
 
+.projects-title {
+    padding: 5% 5% 1% 5%;
+}
+
 .projects article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .projects .card {
@@ -137,4 +161,54 @@
 .right-sidebar {
     grid-row: 2;
     grid-column: 3;
+    padding-right: 5%;
+}
+
+/*Announcements*/
+.announcement-head h3{
+    padding: 20% 5% 5% 5%;
+}
+
+.side-panel-card ul {
+    list-style-type: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.side-panel-card > ul > li {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.side-panel-card > ul > li.no-border {
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
+}
+
+.trending-head h3{
+    padding: 5% 5% 5% 5%;
+}
+
+.trending {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.light {
+    color: #475569;
+}
+
+.user {
+    display: flex;
+    padding: 5%;
+}
+
+.user div {
+    display: flex;
+    flex-direction: column;
 }
